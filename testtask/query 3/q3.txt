@@ -1,0 +1,3 @@
+SELECT Department.NAME FROM EMPLOYEE inner join Department on employee.DEPARTMENT_ID=department.ID
+group by DEPARTMENT.NAME
+having sum(salary) >= ALL(select sum(salary) from employee group by DEPARTMENT_ID);

@@ -1,0 +1,2 @@
+select EMPLOYEE.NAME from EMPLOYEE
+where name like 'Р%н';

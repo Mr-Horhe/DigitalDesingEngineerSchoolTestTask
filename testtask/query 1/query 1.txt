@@ -1,0 +1,2 @@
+select EMPLOYEE.NAME from EMPLOYEE
+where salary >= all(select max(salary) from EMPLOYEE);
